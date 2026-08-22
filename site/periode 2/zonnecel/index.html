@@ -1,0 +1,1184 @@
+
+<!doctype html>
+<html lang="nl" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../uvvis/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Zonnecel - Practica Technische Natuurkunde – Jaar 2</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/practica.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#practicum-efficientie-en-vermogen-van-zonnecellen" class="md-skip">
+          Ga naar inhoud
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Practica Technische Natuurkunde – Jaar 2" class="md-header__button md-logo" aria-label="Practica Technische Natuurkunde – Jaar 2" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Practica Technische Natuurkunde – Jaar 2
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Zonnecel
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Gebruik donkere modus"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Gebruik donkere modus" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Gebruik lichte modus"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Gebruik lichte modus" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Zoeken" placeholder="Zoeken" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Zoeken">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Leegmaken" aria-label="Leegmaken" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Zoeken initialiseren
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigatie" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Practica Technische Natuurkunde – Jaar 2" class="md-nav__button md-logo" aria-label="Practica Technische Natuurkunde – Jaar 2" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Practica Technische Natuurkunde – Jaar 2
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../regels/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Regels Practicum
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../voorbereiding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Voorbereiding, digitaal labjournaal & afronding practicum
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fraude/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fraude & gebruik van AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../veiligheid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Veiligheid
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../meetplan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meetplan
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../periode%201/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Periode 1
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Periode 1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../periode%201/python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../periode%201/lenzen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lenzen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../periode%201/spectrometer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spectrometer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Periode 2
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Periode 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semedx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SEM-EDX
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../open_loop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aeropendulum (open-loop)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../uvvis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UV-VIS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zonnecel
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zonnecel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhoudsopgave">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhoudsopgave
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#leerdoelen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Leerdoelen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introductie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introductie
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#theorie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Theorie
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhoudsopgave">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhoudsopgave
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#leerdoelen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Leerdoelen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introductie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introductie
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#theorie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Theorie
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="practicum-efficientie-en-vermogen-van-zonnecellen">Practicum: Efficiëntie en vermogen van zonnecellen</h1>
+<h2 id="leerdoelen">Leerdoelen</h2>
+<p>Na afloop van dit practicum:</p>
+<ul>
+<li>kun je aan de hand van een zelfstandig opgesteld meetplan een experiment uitvoeren met een fotovoltaïsche (PV) cel;</li>
+<li>kun je de stroom-spanningskarakteristiek (I-V-curve) van een zonnecel uitleggen en experimenteel bepalen;</li>
+<li>kun je het maximale vermogen, de fill factor en de efficiëntie van een zonnecel bepalen;</li>
+<li>kun je zelfstandig een verdiepend experiment bedenken, opzetten en uitvoeren.</li>
+</ul>
+<div class="admonition veiligheid">
+<p class="admonition-title">Veiligheid</p>
+<p>In dit practicum werk je met elektrische apparatuur. Ga zorgvuldig om met de apparatuur en schakel bij twijfel altijd de practicumbegeleider in.</p>
+</div>
+<h2 id="introductie">Introductie</h2>
+<p>Zonnecellen vormen een belangrijk toepassingsgebied binnen de technische natuurkunde, waarin halfgeleiderfysica, optica en elektrische netwerkanalyse samenkomen. Een zonnecel, of fotovoltaïsche (PV) cel, zet invallend licht direct om in elektrische energie door middel van het fotovoltaïsche effect. Hierbij komen elektronen vrij wanneer fotonen met voldoende energie het halfgeleidermateriaal raken, meestal silicium. De vrijgekomen ladingsdragers worden vervolgens gescheiden door een intern elektrisch veld, waardoor een meetbare stroom ontstaat.</p>
+<p><img alt="Een zonnecel module." src="../../assets/periode%202/Zonnecel_foto.png" /></p>
+<p><em>Figuur: Een zonnecel module.</em></p>
+<p>Zonnecellen spelen een steeds belangrijkere rol in de energietransitie, doordat zij zonlicht direct omzetten in elektrische energie zonder CO₂-uitstoot. Binnen de technische natuurkunde vormt het begrijpen van de werking, het rendement en het systeemgedrag van zonnecellen een essentieel onderdeel van duurzame technologieontwikkeling. De prestatie van een zonnecel hangt af van factoren zoals de bandkloof, de intensiteit van het licht en interne verliezen, en kan experimenteel worden onderzocht door spanning en stroom te meten bij verschillende belastingen.</p>
+<div class="admonition voorbereiding">
+<p class="admonition-title">Voorbereidingsopdracht 1</p>
+<ol>
+<li>
+<p>Bekijk de volgende voorbereidingsfilmpjes:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=xKxrkht7CpY" rel="noopener" target="_blank">How do solar panels work</a></li>
+<li><a href="https://www.youtube.com/watch?v=4BX2mEQf09c&amp;t=162s" rel="noopener" target="_blank">Solar cell</a></li>
+<li><a href="https://www.youtube.com/watch?v=IkVLQALtdQw" rel="noopener" target="_blank">Efficiency of solar cells - Measurements</a></li>
+</ul>
+</li>
+<li>
+<p>Maak een meetplan voor bepalen van het vermogen van een zonnecel.<sup id="fnref:meetplan"><a class="footnote-ref" href="#fn:meetplan">1</a></sup> Formuleer het hoofddoel/onderzoeksvraag, geef een theoretische verwachting en maak een meetstrategie.</p>
+</li>
+<li>Maak een duidelijke opstelling voor het doormeten van een zonnecel.</li>
+<li>Bedenk voor jezelf al wat voor verdiepend onderzoek je wilt doen bij de zonnecel.</li>
+</ol>
+</div>
+<h2 id="theorie">Theorie</h2>
+<p>Een fotovoltaïsche (PV) zonnecel is in essentie een belichte pn-junction. Een pn-junction wordt gemaakt door één stuk halfgeleidermateriaal aan de ene kant p-type te doteren (met acceptoren) en aan de andere kant n-type (met donoren). In het p-gebied is de ladingsdragerdichtheid van gaten hoog, terwijl in het n-gebied de elektronen domineren. Zodra deze twee regio’s met elkaar in contact staan, diffunderen elektronen vanuit het n-gebied naar het p-gebied en diffunderen gaten de andere kant op. Hierdoor blijft in het grensvlak een gedepleteerde (<em>depletion zone</em>) laag achter: een gebied waar vrijwel geen vrije ladingsdragers meer aanwezig zijn.</p>
+<p>Deze depletion zone bevat wel vaste, geïoniseerde donoren (positief) en acceptoren (negatief), waardoor er een intern elektrisch veld ontstaat dat de diffusie stopt. Dit veld vormt de basis van de pn-juntion. In een zonnecel zorgt juist dit veld ervoor dat nieuw gegenereerde elektronen en gaten, door de absorptie van fotonen, uit elkaar worden getrokken en richting de n- en p-zijde bewegen. Wanneer er nu een extern draad tussen de n- en p-zijde wordt gelegd ontstaat er een stroom. Deze fotonen gegeneerde stroom is dus lichtafhankelijke stroom <span class="arithmatex">\(I_{\mathrm{ph}}\)</span>.</p>
+<p><img alt="Schematische weergave van een zonnecel." src="../../assets/periode%202/Zonnecel_schematisch.png" /></p>
+<p><em>Figuur: Schematische weergave van een zonnecel.</em></p>
+<p>Wanneer een externe belasting <span class="arithmatex">\(R\)</span> wordt aangesloten, ontstaan er een spanning <span class="arithmatex">\(V\)</span> en stroom <span class="arithmatex">\(I\)</span> waarvan de waarde afhankelijk is van het gekozen belasting <span class="arithmatex">\(R\)</span>. Door <span class="arithmatex">\(R\)</span> te variëren kun je de stroomsterkte en voltage variëren en krijg je een volledige I-V-curve. Het maximale elektrische vermogen volgt uit</p>
+<div class="arithmatex">\[
+P = IV,
+\]</div>
+<p>en het punt waarop dit vermogen maximaal is heet het <em>maximum power point</em> (<span class="arithmatex">\(P_{\mathrm{mpp}}\)</span>). In commerciële PV-systemen wordt dit punt automatisch gevolgd door de omvormer, die tevens de DC-uitgang omzet naar net-geschikte AC.</p>
+<p>De interne kwaliteit van een zonnecel wordt gewoonlijk gekarakteriseerd met de <em>fill factor</em> (FF):</p>
+<div class="arithmatex">\[
+FF = \frac{P_\mathrm{mpp}}{V_{\mathrm{oc}} I_{\mathrm{sc}}} \times 100\%.
+\]</div>
+<p>Hierbij zijn <span class="arithmatex">\(V_{\mathrm{oc}}\)</span> de openklemspanning en <span class="arithmatex">\(I_{\mathrm{sc}}\)</span> de kortsluitstroom. De FF geeft aan hoe rechthoekig de I-V-curve is. De totale efficiëntie vereist daarnaast kennis van het aangeboden lichtvermogen <span class="arithmatex">\(P_{\mathrm{lamp}}\)</span>:</p>
+<div class="arithmatex">\[
+\eta = \frac{P_\mathrm{mpp}}{P_{\mathrm{lamp}}} \times 100\%.
+\]</div>
+<p><img alt="Equivalent elektrisch model van een zonnecel." src="../../assets/periode%202/zonnecel_model.svg" /></p>
+<p><em>Figuur: Equivalent elektrisch model van een zonnecel met fotostroombron <span class="arithmatex">\(I_{\mathrm{ph}}\)</span>, diode <span class="arithmatex">\(I_D\)</span>, uitgangsstroom <span class="arithmatex">\(I\)</span> en spanning <span class="arithmatex">\(V\)</span> over de variabele belasting <span class="arithmatex">\(R\)</span>.</em></p>
+<p>Het elektrisch gedrag van een zonnecel wordt doorgaans beschreven met het één-diode-model (zie figuur hierboven). De fotostroom <span class="arithmatex">\(I_{\mathrm{ph}}\)</span> werkt als een spanningsonafhankelijke lichtbron, terwijl de diode het spanningsafhankelijke recombinatiepad vormt. Uit de knooppuntvergelijking volgt:</p>
+<div class="arithmatex">\[
+I = I_{\mathrm{ph}} - I_D.
+\]</div>
+<p>De diodestroom wordt beschreven door de wet van Shockley<sup id="fnref:shockley"><a class="footnote-ref" href="#fn:shockley">2</a></sup>:</p>
+<div class="arithmatex">\[
+I_D = I_0 \left( e^{\frac{qV}{nkT}} - 1 \right),
+\]</div>
+<p>zodat de volledige I-V-relatie van de zonnecel wordt:</p>
+<div class="arithmatex">\[
+I = I_{\mathrm{ph}}
+    - I_0 \left( e^{\frac{qV}{nkT}} - 1 \right).
+\]</div>
+<p>De twee uiterste punten van de I-V-curve volgen direct uit dit model. Bij <span class="arithmatex">\(V=0\)</span> is de diodestroom verwaarloosbaar en geldt:</p>
+<div class="arithmatex">\[
+I_{\mathrm{sc}} = I_{\mathrm{ph}}.
+\]</div>
+<p>Bij <span class="arithmatex">\(I=0\)</span> verkrijgt men de openklemspanning:</p>
+<div class="arithmatex">\[
+V_{\mathrm{oc}} = \frac{nkT}{q}
+\ln\!\left( \frac{I_{\mathrm{ph}}}{I_0} + 1 \right).
+\]</div>
+<p>Door de belasting <span class="arithmatex">\(R\)</span> systematisch te variëren kan de volledige I-V-curve experimenteel worden bepaald en daarmee het maximum power point, de fill factor en de efficiëntie van de zonnecel.</p>
+<h1 id="practicum">Practicum</h1>
+<h2 id="opstelling-en-belichting">Opstelling en belichting</h2>
+<div class="admonition opdracht">
+<p class="admonition-title">Opdracht 1 — Opstelling</p>
+<ol>
+<li>Plaats de zonnecel in de opstelling.</li>
+<li>Richt de lamp zo dat het oppervlak van de zonnecel zo homogeen mogelijk wordt belicht.</li>
+<li>Noteer de afstand tussen de zonnecel en de lamp.</li>
+<li>
+<p>Controleer de lichtverdeling door de intensiteit op meerdere plaatsen te meten:</p>
+</li>
+<li>
+<p>in het midden;</p>
+</li>
+<li>in de vier hoeken;</li>
+<li>
+<p>langs de randen.</p>
+</li>
+<li>
+<p>Noteer de resultaten in je digitale labjournaal.</p>
+</li>
+<li>Beoordeel op basis van je metingen of de zonnecel voldoende homogeen wordt belicht.</li>
+</ol>
+</div>
+<h2 id="i-v-meting">I-V-meting</h2>
+<div class="admonition opdracht">
+<p class="admonition-title">Opdracht 2 — I-V-karakteristiek</p>
+<ol>
+<li>Bouw de schakeling uit je meetplan op.</li>
+<li>Controleer de schakeling voordat je begint met meten.</li>
+<li>Voer een volledige I-V-meting uit door de belasting <span class="arithmatex">\(R\)</span> systematisch te variëren.</li>
+<li>Gebruik minimaal <strong>15–20 meetpunten</strong>.</li>
+<li>Zorg ervoor dat je zowel het gebied rond de kortsluitstroom als het gebied rond de openklemspanning voldoende bemonstert.</li>
+<li>
+<p>Registreer voor ieder meetpunt:</p>
+</li>
+<li>
+<p>de weerstand <span class="arithmatex">\(R\)</span>;</p>
+</li>
+<li>de spanning <span class="arithmatex">\(V\)</span>;</li>
+<li>de stroom <span class="arithmatex">\(I\)</span>.</li>
+</ol>
+</div>
+<h2 id="analyse">Analyse</h2>
+<div class="admonition opdracht">
+<p class="admonition-title">Opdracht 3 — Analyse</p>
+<ol>
+<li>Plot de gemeten <strong>I-V-curve</strong>.</li>
+<li>Bepaal uit je meetgegevens de kortsluitstroom <span class="arithmatex">\(I_{\mathrm{sc}}\)</span> en de openklemspanning <span class="arithmatex">\(V_{\mathrm{oc}}\)</span>, inclusief een schatting van de onzekerheid.</li>
+<li>Bereken voor ieder meetpunt het elektrische vermogen:</li>
+</ol>
+<p>$$
+   P = IV.
+   $$</p>
+<ol>
+<li>Maak een <strong>P-V-curve</strong>.</li>
+<li>
+<p>Bepaal het maximum power point en daarmee:</p>
+</li>
+<li>
+<p><span class="arithmatex">\(P_{\mathrm{mpp}}\)</span>;</p>
+</li>
+<li><span class="arithmatex">\(V_{\mathrm{mpp}}\)</span>;</li>
+<li>
+<p><span class="arithmatex">\(I_{\mathrm{mpp}}\)</span>.</p>
+</li>
+<li>
+<p>Bereken de <strong>fill factor</strong> van de zonnecel.</p>
+</li>
+<li>Bepaal de <strong>efficiëntie</strong> van de zonnecel.</li>
+<li>Maak ook een <strong>P-R-curve</strong>.</li>
+<li>Onderzoek of het zinvol is om de P-R-curve met een model te fitten. Beargumenteer je keuze.</li>
+</ol>
+</div>
+<h1 id="verdiepend-onderzoek">Verdiepend onderzoek</h1>
+<p>Als je bovenstaande opdrachten hebt afgerond, kun je in de basis een zonnecel karakteriseren. De volgende stap is om zelf een klein onderzoek op te zetten.</p>
+<p>Misschien heb je tijdens de eerdere metingen al iets gezien waarvan je wilt weten hoe het de prestaties van de zonnecel beïnvloedt.</p>
+<p>Mogelijke voorbeelden zijn:</p>
+<ul>
+<li>afstand tot de lamp;</li>
+<li>invalshoek van het licht;</li>
+<li>lichtintensiteit;</li>
+<li>gedeeltelijke afscherming;</li>
+<li>temperatuur;</li>
+<li>verschillende soorten lichtbronnen.</li>
+</ul>
+<div class="admonition opdracht">
+<p class="admonition-title">Opdracht 4 — Eigen onderzoek</p>
+<ol>
+<li>Formuleer een korte onderzoeksvraag.</li>
+<li>Schrijf een kort <strong>projectvoorstel/Plan van Aanpak</strong> van maximaal 10 regels.</li>
+<li>
+<p>Beschrijf hierin kort:</p>
+</li>
+<li>
+<p>wat je wilt onderzoeken;</p>
+</li>
+<li>wat je verwacht;</li>
+<li>welke grootheid je varieert;</li>
+<li>welke grootheden je meet;</li>
+<li>
+<p>hoe je de resultaten gaat analyseren.</p>
+</li>
+<li>
+<p>Bespreek je voorstel met de practicumbegeleider.</p>
+</li>
+<li>Voer na akkoord het experiment uit.</li>
+<li>Noteer je meetmethode, resultaten en observaties in je digitale labjournaal.</li>
+</ol>
+</div>
+<div class="admonition afronding">
+<p class="admonition-title">Afronding</p>
+<ol>
+<li>Zet de gemaakte figuren in je digitale labjournaal.</li>
+<li>Geef iedere figuur een duidelijk onderschrift waarin je uitlegt wat de figuur laat zien.</li>
+<li>Vul de <strong>Resultaten en Discussie</strong> aan.</li>
+<li>Rapporteer de belangrijkste gevonden waarden met hun onzekerheid.</li>
+<li>Bespreek of de gevonden waarden fysisch realistisch zijn.</li>
+<li>Bespreek de belangrijkste bronnen van onzekerheid en eventuele systematische afwijkingen.</li>
+<li>Trek een conclusie over zowel de karakterisering van de zonnecel als je eigen verdiepende onderzoek.</li>
+</ol>
+</div>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:meetplan">
+<p>Zie Brightspace voor een korte uitleg over een meetplan.&#160;<a class="footnote-backref" href="#fnref:meetplan" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:shockley">
+<p>De benaming “de wet van Shockley” verdient enige nuance. Hoewel William Shockley een belangrijke bijdrage leverde aan de halfgeleiderfysica, is hij later bekend geworden om zijn controversiële en onwetenschappelijke uitspraken over intelligentie en ras. Deze opvattingen staan haaks op de waarden van de academische gemeenschap. Om die reden kiezen sommige instellingen ervoor om de betreffende diodevergelijking neutraal te benoemen, bijvoorbeeld als de ideale diodevergelijking of de pn-overgangsvergelijking.&#160;<a class="footnote-backref" href="#fnref:shockley" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Terug naar boven
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.indexes", "navigation.tracking", "navigation.top", "toc.follow", "content.code.copy", "content.code.annotate", "content.footnote.tooltips"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Gekopieerd naar klembord", "clipboard.copy": "Kopi\u00ebren naar klembord", "search.result.more.one": "1 extra overeenkomst op deze pagina", "search.result.more.other": "# extra overeenkomsten op deze pagina", "search.result.none": "Geen overeenkomende documenten", "search.result.one": "1 overeenkomende document", "search.result.other": "# overeenkomende documenten", "search.result.placeholder": "Typ om te beginnen met zoeken", "search.result.term.missing": "Ontbreekt", "select.version": "Selecteer versie"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
