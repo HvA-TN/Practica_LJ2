@@ -42,6 +42,7 @@ nav:
   - Fraude & gebruik van AI: fraude.md
   - Veiligheid: veiligheid.md
   - Meetplan: meetplan.md
+  - Python-tips: Python_tips.md
   - Periode 1:
       - Overzicht: periode 1/index.md
       - Python: periode 1/python.md

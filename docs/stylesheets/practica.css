@@ -54,6 +54,9 @@
     --veiligheid-frame: #8f1d1d;
     --veiligheid-bg: #fff1f1;
 
+    --tips-frame: #269e91;
+    --tips-bg: #e7f6f4;
+
     --methode-frame: #1769aa;
     --methode-bg: #f4f9ff;
 
@@ -103,8 +106,8 @@
     --voorbereiding-frame: #e0a04b;
     --voorbereiding-bg: #30271d;
 
-    --veiligheid-frame: #e07575;
-    --veiligheid-bg: #302020;
+    --tips-frame: #2fb7a8;
+    --tips-bg: #173532;
 
     --methode-frame: #6aafe6;
     --methode-bg: #1d2730;
@@ -293,6 +296,8 @@ textarea {
 .md-typeset details.voorbereiding,
 .md-typeset .admonition.veiligheid,
 .md-typeset details.veiligheid,
+.md-typeset .admonition.tips,
+.md-typeset details.tips,
 .md-typeset .admonition.methode,
 .md-typeset details.methode,
 .md-typeset .admonition.opdracht,
@@ -314,11 +319,14 @@ textarea {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
 }
 
+
 /* Titels van practicumblokken */
 .md-typeset .voorbereiding > .admonition-title,
 .md-typeset .voorbereiding > summary,
 .md-typeset .veiligheid > .admonition-title,
 .md-typeset .veiligheid > summary,
+.md-typeset .tips > .admonition-title,
+.md-typeset .tips > summary,
 .md-typeset .methode > .admonition-title,
 .md-typeset .methode > summary,
 .md-typeset .opdracht > .admonition-title,
@@ -327,10 +335,25 @@ textarea {
 .md-typeset .afronding > summary {
     font-size: 1.05em;
     font-weight: 700;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
+
+    /* Iets compactere titel */
+    padding-top: 0.25rem;
+    padding-bottom: 0.65rem;
+
+    /* Geen extra ruimte onder de titel */
+    margin-bottom: 0;
 }
 
+
+/* Eerste tekst direct onder de titel */
+.md-typeset .admonition.voorbereiding > .admonition-title + p,
+.md-typeset .admonition.veiligheid > .admonition-title + p,
+.md-typeset .admonition.tips > .admonition-title + p,
+.md-typeset .admonition.methode > .admonition-title + p,
+.md-typeset .admonition.opdracht > .admonition-title + p,
+.md-typeset .admonition.afronding > .admonition-title + p {
+    margin-top: 0.5rem;
+}
 /* ============================================================
    10. PRACTICUMBOXEN - TYPES
    ============================================================ */
@@ -364,6 +387,19 @@ textarea {
     font-weight: 700;
 }
 
+/* Tips */
+.md-typeset .admonition.tips,
+.md-typeset details.tips {
+    border-color: var(--tips-frame);
+    background-color: var(--tips-bg);
+}
+
+.md-typeset .tips > .admonition-title,
+.md-typeset .tips > summary {
+    background-color: var(--tips-bg);
+    color: var(--tips-frame);
+    font-weight: 700;
+}
 
 /* Methode */
 .md-typeset .admonition.methode,

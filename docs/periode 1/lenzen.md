@@ -35,7 +35,7 @@ In dit practicum ga je deze relatie zelf onderzoeken. Door voor verschillende vo
 !!! voorbereiding "Voorbereidingsopdracht 1"
 
     1. Neem een laptop mee.
-    2. Zorg voor een goede installatie van Python en Jupyter notebooks.[^anaconda]
+    2. Zorg voor een goede installatie van Python en Jupyter notebooks.
 
 !!! opdracht "Opdracht 1(a)"
 
@@ -122,7 +122,7 @@ def lineair(v, f):
 
 Zoals je misschien hebt opgemerkt, ziet de grafiek er nu aanzienlijk beter uit. De vraag blijft echter wat het snijpunt met de y-as betekent en welke waarde hier precies bij hoort. Om dit op een natuurkundig correcte manier uit te werken, gebruiken natuurkundigen vaak modellen. In dit geval is dat natuurlijk de functie `lineair`.
 
-Nu moeten we ons model nog toetsen (*fitten*!) aan de gemeten data. Dit is in principe een optimalisatieprobleem: we moeten de fitwaarde *f* zo kiezen dat de afwijkingen tussen model en meting zo klein mogelijk zijn.[^fitten] Hiervoor maken we gebruik van de rekenkracht van Python, met de wetenschappelijke module **scipy**.
+Nu moeten we ons model nog toetsen (*fitten*!) aan de gemeten data. Dit is in principe een optimalisatieprobleem: we moeten de fitwaarde *f* zo kiezen dat de afwijkingen tussen model en meting zo klein mogelijk zijn.[^fitten] Hiervoor maken we gebruik van de rekenkracht van Python, met de wetenschappelijke module scipy.
 
 ```python title="Data fitten"
 from scipy.optimize import curve_fit
@@ -157,7 +157,7 @@ Wanneer je meetpunten hebt \((x_i, y_i)\) met meetfouten \(\sigma_i\), wil je va
 Het idee van een least squares-fit is dat je de afwijkingen tussen model en meting (de residuen) minimaliseert:
 
 \[
-r_i = y_i^{(\text{gemeten})} - y(x_i;\theta).
+\epsilon_i = y_i^{(\text{gemeten})} - y(x_i;\theta).
 \]
 
 ### Zonder meetfouten
@@ -165,7 +165,7 @@ r_i = y_i^{(\text{gemeten})} - y(x_i;\theta).
 Als de individuele meetonzekerheden \(\sigma_i\) niet bekend zijn, minimaliseer je de som van de kwadraten van de residuen:
 
 \[
-R^2(\theta) = \sum_i r_i^2.
+R^2(\theta) = \sum_i \epsilon_i^2.
 \]
 
 Dit heet een ordinary least squares-fit (OLS): alle meetpunten wegen even zwaar mee.
@@ -175,7 +175,7 @@ Dit heet een ordinary least squares-fit (OLS): alle meetpunten wegen even zwaar 
 Als de onzekerheden \(\sigma_i\) wel bekend zijn, deel je de residuen door de fout en minimaliseer je
 
 \[
-\chi^2(\theta) = \sum_i \left( \frac{r_i}{\sigma_i} \right)^2.
+\chi^2(\theta) = \sum_i \left( \frac{\epsilon_i}{\sigma_i} \right)^2.
 \]
 
 Dit heet een weighted least squares-fit (WLS) of \(\chi^2\)-fit. Het resultaat is statistisch optimaal bij normaal verdeelde meetfouten.
@@ -208,6 +208,8 @@ De kwaliteit van de fit hangt af van:
 
 In vergelijking met een linearisatie heeft een directe least squares-fit als voordeel dat alle beschikbare informatie wordt gebruikt en dat er geen systematische fouten ontstaan door transformaties. Daarom is `curve_fit` de meest robuuste methode, zeker bij fysische modellen die niet-lineair zijn in de parameters.
 
+
+### Voorbeeld figuur \& fit:
 ```python title="Voorbeeld: fitten met curve_fit"
 import numpy as np
 from scipy.optimize import curve_fit
