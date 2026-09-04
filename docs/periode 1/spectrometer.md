@@ -57,7 +57,7 @@ In de spectrometer wordt het uitgespreide licht door de tralie op een camera gep
 
 Bij het analyseren van lichtbronnen wordt vaak gebruikgemaakt van spectraallampen. Elke spectraallijn correspondeert met een specifieke elektronische overgang in het atoom of molecuul van het gebruikte gas.
 
-![Het Bohrmodel.](../assets/periode 1/Bohr.png)
+![Het Bohrmodel.](../assets/periode%201/Borh.png)
 
 *Figuur: Het Bohrmodel. Bij transitie van een elektron naar een andere baan komt er een specifieke kleur licht vrij: de spectraallijn.*
 

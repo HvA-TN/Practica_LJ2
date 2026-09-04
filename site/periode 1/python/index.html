@@ -395,6 +395,33 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python_tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python-tips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -425,7 +452,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
           <div class="md-nav__link md-nav__container">
@@ -447,14 +474,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -678,8 +705,6 @@
       
         
       
-        
-      
     
     
     
@@ -693,7 +718,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -715,14 +740,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="">
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -741,35 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../periode%202/semedx/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    SEM-EDX
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../periode%202/open_loop/" class="md-nav__link">
+      <a href="../../periode%202/aeropendulum-openloop/" class="md-nav__link">
         
   
   
@@ -797,14 +794,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../periode%202/uvvis/" class="md-nav__link">
+      <a href="../../periode%202/aeropendulum-pid/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    UV-VIS
+    Aeropendulum (PID)
   
 
     
@@ -954,7 +951,7 @@
 <h1 id="opzetten-python-voor-practicum">Opzetten Python voor practicum</h1>
 <h2 id="leerdoelen">Leerdoelen</h2>
 <ul>
-<li>Python-ontwikkelomgeving opzetten in VSCode.</li>
+<li>Python-ontwikkelomgeving opzetten in VS Code.</li>
 <li>Leren werken met virtuele omgevingen in Python.</li>
 <li>Basis van projectstructuur.</li>
 </ul>
@@ -962,16 +959,16 @@
 <p class="admonition-title">Veiligheid</p>
 <p>We gaan programmeren, hier zijn geen veiligheidskwesties aan gebonden. Probeer alleen zoveel mogelijk zelfstandig te programmeren. Het is toegestaan om in dit practicum generatieve AI te gebruiken, gebruik het verstandig:</p>
 <ol>
-<li>Gebruik het als uitlegmachine, niet als codegenerator</li>
-<li>Gebruik het om eigen code te laten verbeteren, maar niet herschrijven</li>
-<li>Gebruik het niet voor volledige oplossingen, snap je iets niet? Vraag het de docent.</li>
+<li>Gebruik het als uitlegmachine, niet als codegenerator.</li>
+<li>Gebruik het om eigen code te laten verbeteren, maar niet herschrijven.</li>
+<li>Gebruik het niet voor volledige oplossingen. Snap je iets niet? Vraag het de docent.</li>
 </ol>
 </div>
 <h2 id="introductie">Introductie</h2>
 <p>Python is een van de meest gebruikte programmeertalen binnen de natuurkunde en andere technische vakgebieden. Het wordt gebruikt voor het verwerken en visualiseren van meetgegevens, het uitvoeren van numerieke berekeningen en het aansturen van experimenten. Tijdens de opleiding zullen we Python daarom regelmatig gebruiken, bijvoorbeeld om meetdata te analyseren en grafieken te maken. Python zelf is echter alleen de programmeertaal. Voor praktisch gebruik zijn daarnaast verschillende <em>packages</em> nodig. Zo gebruiken we <code>NumPy</code> voor numerieke berekeningen, <code>Matplotlib</code> voor het maken van grafieken en <code>SciPy</code> voor wetenschappelijke berekeningen. Naarmate je meer projecten uitvoert, zul je steeds meer van dergelijke packages tegenkomen.</p>
 <p>Hierbij ontstaat een praktisch probleem: niet ieder project gebruikt dezelfde packages of dezelfde versies daarvan. Een nieuwere versie van een package kan bijvoorbeeld anders werken dan een oudere versie. Om te voorkomen dat verschillende projecten elkaar in de weg zitten, werken we daarom met <em>virtuele omgevingen</em> (<em>environments</em>). Een environment kun je zien als een afzonderlijke Python-installatie met zijn eigen verzameling packages. Voor ieder project kan zo een geschikte en reproduceerbare werkomgeving worden gemaakt.</p>
-<p>In dit practicum gebruiken we <strong>Miniforge</strong> om Python, environments en packages te beheren. Miniforge is een relatief compacte Python-distributie die gebruikmaakt van het <code>conda</code>-systeem en standaard packages uit het <code>conda-forge</code>-ecosysteem gebruikt. Hierdoor hoeven packages en hun onderlinge afhankelijkheden niet handmatig geïnstalleerd en bijgehouden te worden.</p>
-<p>Voor het daadwerkelijk schrijven en uitvoeren van Python-code gebruiken we <strong>Visual Studio Code (VS Code)</strong>. VS Code is een programmeeromgeving waarin je onder andere Python-scripts en Jupyter notebooks kunt schrijven, uitvoeren en beheren. VS Code bevat daarbij niet zelf "de Python": we koppelen VS Code aan de Python-interpreter uit de environment die we met Miniforge hebben gemaakt.</p>
+<p>In dit practicum gebruiken we <strong>Miniforge</strong> om Python, environments en packages te beheren. Miniforge is een relatief compacte Python-distributie die gebruikmaakt van het <code>conda</code>-systeem. Miniforge gebruikt standaard packages uit het <code>conda-forge</code>-ecosysteem. Hierdoor hoeven packages en hun onderlinge afhankelijkheden niet handmatig geïnstalleerd en bijgehouden te worden.</p>
+<p>Voor het daadwerkelijk schrijven en uitvoeren van Python-code gebruiken we <strong>Visual Studio Code (VS Code)</strong>. VS Code is een programmeeromgeving waarin je onder andere Python-scripts en Jupyter Notebooks kunt schrijven, uitvoeren en beheren. VS Code bevat daarbij niet zelf "de Python": we koppelen VS Code aan de Python-interpreter uit de environment die we met Miniforge hebben gemaakt.</p>
 <p>In dit practicum ga je daarom stap voor stap een complete Python-werkomgeving opzetten. Je installeert Miniforge en VS Code, maakt vanuit de opdrachtprompt een eigen environment aan, installeert hierin enkele veelgebruikte wetenschappelijke packages en koppelt deze environment vervolgens aan VS Code. Tot slot controleer je met een eenvoudig Python-programma of alles correct is geïnstalleerd.</p>
 <div class="admonition voorbereiding">
 <p class="admonition-title">Voorbereidingsopdracht</p>
@@ -983,10 +980,14 @@
 <h2 id="python-installatie">Python installatie</h2>
 <div class="admonition opdracht">
 <p class="admonition-title">Opdracht 1 --- Oude Anaconda-installatie verwijderen</p>
-<p>Voordat we een nieuwe Python-omgeving installeren, verwijderen we eerst eventuele oude installaties van Anaconda.</p>
+<p>Voordat we een nieuwe Python-omgeving installeren, verwijderen we eerst eventuele oude installaties van Anaconda. Hiermee voorkomen we dat Windows of VS Code later per ongeluk een oude Python-installatie gebruikt.</p>
 <ol>
-<li>Open in Windows <strong>Instellingen</strong> → <strong>Apps</strong> → <strong>Geïnstalleerde apps</strong>.</li>
-<li>Zoek naar <strong>Anaconda</strong> of <strong>Anaconda3</strong>. Indien Anaconda geïnstalleerd is, verwijder deze installatie.</li>
+<li>
+<p>Open in Windows <strong>Instellingen</strong> → <strong>Apps</strong> → <strong>Geïnstalleerde apps</strong>.</p>
+</li>
+<li>
+<p>Zoek naar <strong>Anaconda</strong> of <strong>Anaconda3</strong>. Indien Anaconda geïnstalleerd is, verwijder deze installatie.</p>
+</li>
 <li>
 <p>Open vervolgens de Verkenner en ga naar je gebruikersmap:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>C:\Users\&lt;gebruikersnaam&gt;\
@@ -1010,6 +1011,30 @@
 <p>Start de computer opnieuw op.</p>
 </li>
 </ol>
+<p><strong>Let op!</strong> Heb je eerder zelf environments gemaakt met bestanden die je nog nodig hebt? Verwijder deze dan niet voordat je hebt gecontroleerd of je de bestanden hebt opgeslagen.</p>
+</div>
+<div class="admonition opdracht">
+<p class="admonition-title">Opdracht 2 --- Controleren of Anaconda verwijderd is</p>
+<p>We controleren nu of Windows niet meer naar de oude Anaconda-installatie verwijst.</p>
+<ol>
+<li>
+<p>Open de Windows <strong>Opdrachtprompt</strong>. Zoek hiervoor in het startmenu naar <code>cmd</code> (Command Prompt/Opdrachtprompt).</p>
+</li>
+<li>
+<p>Voer het volgende commando uit:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>where conda
+</code></pre></div>
+</li>
+<li>
+<p>Voer vervolgens uit:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>where python
+</code></pre></div>
+</li>
+<li>
+<p>Controleer de uitvoer. Er mag geen pad meer zichtbaar zijn waarin <code>Anaconda</code> of <code>anaconda3</code> staat.</p>
+</li>
+</ol>
+<p>Het is geen probleem als Windows meldt dat <code>conda</code> niet kan worden gevonden. Op dit moment hebben we immers nog geen nieuwe conda-installatie geïnstalleerd.</p>
 </div>
 <div class="admonition opdracht">
 <p class="admonition-title">Opdracht 3 --- Miniforge installeren</p>
@@ -1024,7 +1049,7 @@
 </li>
 <li>
 <p>Kies de installer die past bij je computer. Voor de meeste Windows-computers is dit:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Miniforge3-Windows-x86_64.exe
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Miniforge3-Windows-x86_64.exe
 </code></pre></div>
 </li>
 <li>
@@ -1038,6 +1063,11 @@
 </li>
 </ol>
 </div>
+<figure>
+  <img alt="Installatie van Visual Studio Code" src="../../assets/periode%201/Miniforge.png" width="100%" />
+<br />
+<figcaption>Installatie van Miniforge.</figcaption>
+</figure>
 <div class="admonition opdracht">
 <p class="admonition-title">Opdracht 4 --- Miniforge controleren</p>
 <p>We controleren of Miniforge en het programma <code>conda</code> correct zijn geïnstalleerd.</p>
@@ -1047,7 +1077,7 @@
 </li>
 <li>
 <p>Voer het volgende commando uit:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>conda --version
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>conda --version
 </code></pre></div>
 </li>
 <li>
@@ -1055,7 +1085,7 @@
 </li>
 <li>
 <p>Controleer vervolgens welke Python-installatie op dit moment wordt gebruikt:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>where python
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>where python
 </code></pre></div>
 </li>
 <li>
@@ -1064,15 +1094,49 @@
 </ol>
 </div>
 <div class="admonition opdracht">
-<p class="admonition-title">Opdracht 5 --- Een Python-environment maken</p>
-<p>We installeren Python niet rechtstreeks als één algemene installatie voor alle projecten. In plaats daarvan maken we binnen Miniforge een afzonderlijke <em>environment</em>.</p>
+<p class="admonition-title">Opdracht 5 --- Miniforge toevoegen aan PowerShell</p>
+<p>Om Conda-commando's rechtstreeks vanuit PowerShell en de terminal van VS Code te kunnen gebruiken, moet Miniforge eenmalig aan PowerShell worden toegevoegd.</p>
 <ol>
 <li>
-<p>Open de <strong>Miniforge Prompt</strong>.</p>
+<p>Open via het Windows-startmenu de <strong>Miniforge Prompt</strong>.</p>
 </li>
 <li>
-<p>Maak een nieuwe environment met de naam <code>practicum_omgeving</code>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>conda create -n practicum_omgeving python
+<p>Voer het volgende commando uit:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>conda init powershell
+</code></pre></div>
+<p>Hiermee wordt PowerShell zo ingesteld dat het commando <code>conda</code> beschikbaar is.</p>
+</li>
+<li>
+<p>Sluit de Miniforge Prompt en open vervolgens <strong>PowerShell</strong>.</p>
+</li>
+<li>
+<p>PowerShell kan het uitvoeren van het Conda-script blokkeren vanwege de ingestelde beveiliging. Krijg je een melding dat het uitvoeren van scripts is uitgeschakeld (<em>running scripts is disabled on this system</em>)? Voer dan in PowerShell het volgende commando uit:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+</code></pre></div>
+<p>Bevestig de wijziging wanneer daarom wordt gevraagd door <code>Y</code> te typen en op <strong>Enter</strong> te drukken. Door <code>CurrentUser</code> te gebruiken is hiervoor geen administratoraccount nodig.</p>
+</li>
+<li>
+<p>Sluit vervolgens alle geopende PowerShell-vensters en <strong>VS Code volledig af</strong>. Start daarna PowerShell opnieuw.</p>
+</li>
+<li>
+<p>Controleer of Conda nu beschikbaar is:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>conda --version
+</code></pre></div>
+<p>Wanneer een versienummer wordt weergegeven, bijvoorbeeld <code>conda 25.x.x</code>, is Miniforge correct aan PowerShell toegevoegd.</p>
+</li>
+</ol>
+</div>
+<div class="admonition opdracht">
+<p class="admonition-title">Opdracht 6 --- Een Python-environment maken</p>
+<p>We installeren Python niet rechtstreeks als één algemene installatie voor alle projecten. In plaats daarvan maken we binnen Miniforge een afzonderlijke <em>environment</em>. Hierdoor kunnen verschillende projecten ieder hun eigen Python-versie en packages gebruiken.</p>
+<p>In de vorige opdracht hebben we Conda beschikbaar gemaakt in PowerShell. We gebruiken daarom vanaf nu <strong>PowerShell</strong> voor het uitvoeren van Conda-commando's. De <strong>Miniforge Prompt</strong> kan hiervoor eventueel ook worden gebruikt.</p>
+<ol>
+<li>
+<p>Open <strong>PowerShell</strong>.</p>
+</li>
+<li>
+<p>Maak een nieuwe environment met de naam <code>practicum</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>conda create -n practicum python
 </code></pre></div>
 </li>
 <li>
@@ -1080,55 +1144,59 @@
 </li>
 <li>
 <p>Activeer vervolgens de nieuwe environment:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>conda activate practicum_omgeving
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>conda activate practicum
 </code></pre></div>
 </li>
 <li>
 <p>Controleer de geïnstalleerde Python-versie:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>python --version
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>python --version
 </code></pre></div>
-<p>Je ziet nu aan het begin van de opdrachtregel <code>(practicum_omgeving)</code> staan. Dit betekent dat de environment <code>practicum_omgeving</code> actief is.</p>
+<p>Je ziet nu aan het begin van de opdrachtregel <code>(practicum)</code> staan. Dit betekent dat de environment <code>practicum</code> actief is.</p>
 </li>
 <li>
-<p>Je kunt ook bekijken welke environments aanwezig zijn. Naast <code>practicum_omgeving</code> zou op dit moment alleen de <code>base</code>-environment aanwezig moeten zijn. Gebruik hiervoor:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>conda env list
+<p>Bekijk vervolgens welke environments op je computer aanwezig zijn:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>conda env list
 </code></pre></div>
-<p>Je krijgt uitvoer die lijkt op:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a># conda environments:
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>#
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a># * -&gt; active
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a># + -&gt; frozen
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>base                  C:\Users\&lt;jouw_naam&gt;\AppData\Local\miniforge3
-<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>practicum_omgeving *  C:\Users\&lt;jouw_naam&gt;\AppData\Local\miniforge3\envs\practicum_omgeving
+<p>Naast <code>practicum</code> zou op dit moment in ieder geval de <code>base</code>-environment aanwezig moeten zijn. De actieve environment wordt aangegeven met een sterretje (<code>*</code>). De uitvoer ziet er bijvoorbeeld als volgt uit:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a># conda environments:
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>#
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a># * -&gt; active
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a># + -&gt; frozen
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>base                 C:\Users\&lt;jouw_naam&gt;\AppData\Local\miniforge3
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>practicum         *  C:\Users\&lt;jouw_naam&gt;\AppData\Local\miniforge3\envs\practicum
 </code></pre></div>
 </li>
 </ol>
 </div>
 <div class="admonition opdracht">
-<p class="admonition-title">Opdracht 6 --- Wetenschappelijke packages installeren</p>
+<p class="admonition-title">Opdracht 7 --- Wetenschappelijke packages installeren</p>
 <p>Een nieuwe Python-environment bevat nog niet automatisch alle packages die we tijdens de practica nodig hebben. We installeren daarom een aantal veelgebruikte wetenschappelijke packages.</p>
+<p>Ga verder in <strong>PowerShell</strong> vanuit de vorige opdracht. De <strong>Miniforge Prompt</strong> kan eventueel ook worden gebruikt.</p>
 <ol>
 <li>
-<p>Controleer eerst of de environment <code>practicum_omgeving</code> actief is. Aan het begin van de opdrachtregel moet <code>(practicum_omgeving)</code> staan.</p>
-</li>
-<li>
-<p>Installeer vervolgens NumPy, SciPy, Matplotlib, Pandas en Jupyter:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>conda install numpy scipy matplotlib pandas jupyter
+<p>Controleer eerst of de environment <code>practicum</code> actief is. Aan het begin van de opdrachtregel moet <code>(practicum)</code> staan.</p>
+<p>Is dit niet het geval, activeer de environment dan met:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>conda activate practicum
 </code></pre></div>
 </li>
 <li>
-<p>Bevestig de installatie wanneer daarom wordt gevraagd.</p>
+<p>Installeer vervolgens NumPy, SciPy, Matplotlib, Pandas en Jupyter (<code>ipykernel</code>):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>conda install numpy scipy matplotlib pandas ipykernel
+</code></pre></div>
 </li>
 <li>
-<p>Bekijk na de installatie welke packages in de environment aanwezig zijn:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>conda list
+<p>Bevestig de installatie wanneer daarom wordt gevraagd door <code>y</code> te typen en op <strong>Enter</strong> te drukken.</p>
+</li>
+<li>
+<p>Bekijk na de installatie welke packages in de actieve environment aanwezig zijn:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>conda list
 </code></pre></div>
-<p><strong>Vraag:</strong> Zoek in de lijst de packages <code>numpy</code>, <code>scipy</code> en <code>matplotlib</code>. Welke versies zijn geïnstalleerd?</p>
 </li>
 </ol>
+<p><strong>Vraag:</strong> Zoek in de lijst de packages <code>numpy</code>, <code>scipy</code> en <code>matplotlib</code>. Welke versies zijn geïnstalleerd?</p>
 </div>
 <div class="admonition opdracht">
-<p class="admonition-title">Opdracht 7 --- Visual Studio Code installeren</p>
+<p class="admonition-title">Opdracht 8 --- Visual Studio Code installeren</p>
 <p>Tot nu toe hebben we Python en de benodigde packages geïnstalleerd. We hebben echter nog geen programma waarin we gemakkelijk Python-code kunnen schrijven. Hiervoor gebruiken we <strong>Visual Studio Code (VS Code)</strong>.</p>
 <ol>
 <li>
@@ -1149,44 +1217,51 @@
 </li>
 </ol>
 </div>
+<figure>
+  <img alt="Installatie van Visual Studio Code" src="../../assets/periode%201/VSCode.png" width="100%" />
+<br />
+<figcaption>Installatie van Miniforge.</figcaption>
+</figure>
 <h2 id="mappenstructuur">Mappenstructuur</h2>
-<h3 id="mappenstructuur_1">Mappenstructuur</h3>
 <p>Tijdens practica verzamel je verschillende bestanden, zoals Python-scripts, meetdata en figuren. Het is daarom belangrijk om vanaf het begin een duidelijke <strong>mappenstructuur</strong> te gebruiken. Zo blijven bestanden makkelijk terug te vinden en voorkom je dat verschillende projecten of versies door elkaar raken.</p>
-<p>Maak voor ieder practicumserie of project een <strong>aparte hoofdmap</strong> en verdeel deze onder per practicum. Een goede mappenstructuur is een belangrijk onderdeel van zorgvuldig en reproduceerbaar werken.</p>
+<p>Maak voor iedere practicumserie of ieder project een <strong>aparte hoofdmap</strong> en verdeel deze onder per practicum. Een goede mappenstructuur is een belangrijk onderdeel van zorgvuldig en reproduceerbaar werken.</p>
 <div class="admonition opdracht">
-<p class="admonition-title">Opdracht 8 --- mappenstructuur</p>
-<p>In deze opdracht gaan we aan de slag om een goede structuur neer te zetten en deze te laden vanuit VS Code. </p>
+<p class="admonition-title">Opdracht 9 --- Mappenstructuur</p>
+<p>In deze opdracht gaan we aan de slag om een goede structuur neer te zetten en deze te laden vanuit VS Code.</p>
 <ol>
-<li>Open in VS Code <strong>File</strong> → <strong>Open Folder...</strong> → <strong>Documenten</strong>.</li>
-<li>Creëer een nieuwe map op de locatie die handig is bijvoorbeeld <strong>documenten</strong>. </li>
-<li>Maak de mappenstructuur na uit onderstaande figuur.</li>
+<li>
+<p>Open in VS Code <strong>File</strong> → <strong>Open Folder...</strong>.</p>
+</li>
+<li>
+<p>Creëer een nieuwe map op een handige locatie, bijvoorbeeld op <strong>OneDrive</strong>.</p>
+</li>
+<li>
+<p>Maak de mappenstructuur na uit onderstaande figuur.</p>
+</li>
 </ol>
 </div>
-<p>Ieder practicum dat je start zal je beginnen met <strong>Open Folder...</strong> en dan de juiste practica kiezen. Zo zorg je ervoor dat je altijd je data, figuren en gebruikte scripts kunt terugvinden.</p>
-<!-- Exporteer de oorspronkelijke LaTeX-figuur als SVG naar ../assets/python/mappenstructuur.svg
-![Boomdiagram voor apparaatcommunicatie.](../assets/python/mappenstructuur.svg) -->
-
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>Leerjaar 2/
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>└── Practicum/
-<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>    ├── Periode 1/
-<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>    │   ├── Practicum Python Intro/
-<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>    │   │   ├── data/
-<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>    │   │   ├── figuren/
-<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>    │   │   ├── test.py
-<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>    │   │   └── test.ipynb
-<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>    │   ├── Practicum Lenzen/
-<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>    │   ├── Practicum Spectrometer/
-<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>    │
-<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>    └── Periode 2/
-<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>        ├── Practicum 1/
-<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>        ├── Practicum 2/
-<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a>        └── Practicum 3/
+<p>Ieder practicum dat je start zal je beginnen met <strong>Open Folder...</strong> en dan het juiste practicum kiezen. Zo zorg je ervoor dat je altijd je data, figuren en gebruikte scripts kunt terugvinden.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>Leerjaar 2/
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>└── Practicum/
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>    ├── Periode 1/
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>    │   ├── Practicum Python Intro/
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>    │   │   ├── data/
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>    │   │   ├── figuren/
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>    │   │   ├── script.py
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>    │   │   └── script.ipynb
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a>    │   ├── Practicum Lenzen/
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a>    │   └── Practicum Spectrometer/
+<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a>    │
+<a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a>    └── Periode 2/
+<a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a>        ├── Practicum 1/
+<a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a>        ├── Practicum 2/
+<a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a>        └── Practicum 3/
 </code></pre></div>
 <h2 id="test-python">Test Python</h2>
 <p>Een <strong>Jupyter Notebook</strong> is een document waarin Python-code in afzonderlijke blokken, zogenaamde <em>cellen</em>, kan worden uitgevoerd. Je kunt ze herkennen aan de extensie <strong>.ipynb</strong>. Het grote voordeel hiervan is dat je code stap voor stap kunt uitvoeren en het resultaat direct onder de betreffende cel verschijnt. Naast code kunnen notebooks ook tekst, formules en figuren bevatten.</p>
 <p>Dit maakt notebooks bijzonder geschikt voor practica en data-analyse: je kunt meetgegevens inlezen, berekeningen uitvoeren en grafieken maken zonder telkens het volledige programma opnieuw uit te voeren. Tijdens de practica zullen we Jupyter Notebooks daarom regelmatig gebruiken.</p>
 <div class="admonition opdracht">
-<p class="admonition-title">Opdracht 9 --- Test Jupyter Notebook (.ipynb)</p>
+<p class="admonition-title">Opdracht 10 --- Test Jupyter Notebook (.ipynb)</p>
 <p>In de vorige opdrachten hebben we de basis gelegd voor een overzichtelijke mappenstructuur en hebben we de benodigde software geïnstalleerd. Nu gaan we controleren of alles correct werkt.</p>
 <ol>
 <li>
@@ -1199,38 +1274,29 @@
 <p>Neem de onderstaande code over en voer de cel uit met <code>Shift+Enter</code>.</p>
 </li>
 <li>
-<p>Als er nog geen Python-omgeving is geselecteerd, vraagt VS Code om een <em>kernel</em> te kiezen. Selecteer hier de eerder aangemaakte <code>practicum_omgeving</code>. Deze kan soms wat verstopt zitten.</p>
+<p>Als er nog geen Python-omgeving is geselecteerd, vraagt VS Code om een <em>kernel</em> te kiezen. Selecteer hier de eerder aangemaakte <code>practicum</code>-environment. Deze kan soms wat verstopt zitten.</p>
 </li>
 <li>
-<p>Je kunt de actieve omgeving ook controleren of wijzigen via <code>Select Kernel</code> rechtsboven in het notebook. Controleer of hier <code>practicum_omgeving</code> is geselecteerd.</p>
+<p>Je kunt de actieve omgeving ook controleren of wijzigen via <strong>Select Kernel</strong> rechtsboven in het notebook. Controleer of hier <code>practicum</code> is geselecteerd.</p>
 </li>
 <li>
 <p>Controleer of de uitvoer van de code overeenkomt met wat je verwacht.</p>
 </li>
 </ol>
 </div>
-<div class="highlight"><span class="filename">script.ipynb</span><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Hello world"</span><span class="p">)</span>
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
-<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>
-<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
-<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
-<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Array a:"</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
-<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Array a^2:"</span><span class="p">,</span> <span class="n">a</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<div class="highlight"><span class="filename">script.ipynb</span><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Hello world"</span><span class="p">)</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Array a:"</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Array a^2:"</span><span class="p">,</span> <span class="n">a</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
 </code></pre></div>
-<p>Naast Jupyter Notebooks wordt Python veel gebruikt in de vorm van
-<strong>Python-scripts</strong>. Dit zijn tekstbestanden met de extensie <strong>.py</strong>.
-In tegenstelling tot een Jupyter Notebook bestaat een Python-script niet uit
-losse cellen: bij het uitvoeren wordt het programma in principe van boven naar
-beneden uitgevoerd.</p>
-<p>Bij een Jupyter Notebook hebben we hiervoor een <em>kernel</em> geselecteerd.
-Voor een Python-script moet VS Code weten welke <strong>Python-interpreter</strong>
-gebruikt moet worden. Het is belangrijk om hier onze eerder gemaakte
-<code>practicum_omgeving</code> te kiezen. Anders kan het gebeuren dat het script
-met een andere Python-installatie wordt uitgevoerd waarin bijvoorbeeld onze
-packages niet zijn geïnstalleerd.</p>
+<p>Naast Jupyter Notebooks wordt Python veel gebruikt in de vorm van <strong>Python-scripts</strong>. Dit zijn tekstbestanden met de extensie <strong>.py</strong>. In tegenstelling tot een Jupyter Notebook bestaat een Python-script niet uit losse cellen: bij het uitvoeren wordt het programma in principe van boven naar beneden uitgevoerd.</p>
+<p>Bij een Jupyter Notebook hebben we hiervoor een <em>kernel</em> geselecteerd. Voor een Python-script moet VS Code weten welke <strong>Python-interpreter</strong> gebruikt moet worden. Het is belangrijk om hier onze eerder gemaakte <code>practicum</code>-environment te kiezen. Anders kan het gebeuren dat het script met een andere Python-installatie wordt uitgevoerd waarin bijvoorbeeld onze packages niet zijn geïnstalleerd.</p>
 <div class="admonition opdracht">
-<p class="admonition-title">Opdracht 10 --- Test Python-script (.py)</p>
+<p class="admonition-title">Opdracht 11 --- Test Python-script (.py)</p>
 <ol>
 <li>
 <p>Zorg dat de map <strong>Practicum Python Intro</strong> nog geopend is in VS Code.</p>
@@ -1240,27 +1306,14 @@ packages niet zijn geïnstalleerd.</p>
 </li>
 <li>
 <p>Selecteer de juiste Python-interpreter. Druk hiervoor op <code>Ctrl+Shift+P</code> en zoek naar:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>Python: Select Interpreter
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>Python: Select Interpreter
 </code></pre></div>
 </li>
 <li>
-<p>Selecteer de eerder gemaakte <code>practicum_omgeving</code>. Als deze niet direct zichtbaar is, kijk dan bij de overige beschikbare Python-omgevingen.</p>
+<p>Selecteer de eerder gemaakte <code>practicum</code>-environment. Als deze niet direct zichtbaar is, kijk dan bij de overige beschikbare Python-omgevingen.</p>
 </li>
 <li>
 <p>Neem onderstaande code over in <code>script.py</code> en sla het bestand op.</p>
-<div class="highlight"><span class="filename">script.py</span><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
-<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>
-<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Hello world"</span><span class="p">)</span>
-<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>
-<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
-<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>
-<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Array a:"</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
-<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Array a^2:"</span><span class="p">,</span> <span class="n">a</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
-<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>
-<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Python wordt uitgevoerd vanuit:"</span><span class="p">)</span>
-<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a><span class="nb">print</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">)</span>
-</code></pre></div>
 </li>
 <li>
 <p>Voer het programma uit met de knop <strong>Run Python File</strong> rechtsboven in VS Code.</p>
@@ -1270,19 +1323,39 @@ packages niet zijn geïnstalleerd.</p>
 </li>
 </ol>
 </div>
+<div class="highlight"><span class="filename">script.py</span><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Hello world"</span><span class="p">)</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Array a:"</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Array a^2:"</span><span class="p">,</span> <span class="n">a</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a>
+<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Python wordt uitgevoerd vanuit:"</span><span class="p">)</span>
+<a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a><span class="nb">print</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">)</span>
+</code></pre></div>
 <div class="admonition opdracht">
-<p class="admonition-title">Opdracht 11 --- Controleer de Python-omgeving</p>
+<p class="admonition-title">Opdracht 12 --- Controleer de Python-omgeving</p>
 <p>Bekijk de laatste regel van de uitvoer van je programma. Hier staat het pad naar het bestand <code>python.exe</code> waarmee het programma is uitgevoerd.</p>
 <ol>
 <li>
-<p>Controleer of in dit pad de naam <code>practicum_omgeving</code> voorkomt.</p>
+<p>Controleer of in dit pad de naam <code>practicum</code> voorkomt.</p>
 </li>
 <li>
 <p>Controleer ook linksonder in VS Code welke Python-versie en environment geselecteerd zijn.</p>
 </li>
 <li>
-<p>Staat hier niet <code>practicum_omgeving</code>? Selecteer dan opnieuw de juiste interpreter via <code>Python: Select Interpreter</code> en voer <code>script.py</code> opnieuw uit.</p>
+<p>Staat hier niet <code>practicum</code>? Selecteer dan opnieuw de juiste interpreter via <code>Python: Select Interpreter</code> en voer <code>script.py</code> opnieuw uit.</p>
 </li>
+</ol>
+</div>
+<div class="admonition afronding">
+<p class="admonition-title">Afronding</p>
+<ol>
+<li>Heb je alle opdrachten afgerond? Laat dit dan controleren door de practicumbegeleider.</li>
+<li>Lukt het niet om alles op tijd af te ronden, zorg ervoor dat je dit dan thuis afrondt. Mocht je er thuis niet uitkomen, spreek dan de practicumbegeleider even aan; diegene zal dan met je meekijken.</li>
 </ol>
 </div>
 

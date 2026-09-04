@@ -8,8 +8,7 @@ Als voorbeeld gebruiken we op deze pagina een klassiek experiment:
 
 > **Bepaling van de valversnelling met een slinger**
 
-![De slinger van Foucault.](../assets/periode%201/Pendulum.jpg)
-
+![De slinger van Foucault.](/docs/assets/periode%201/Pendulum.jpg)
 *Figuur: De slinger van Foucault.*
 
 ---

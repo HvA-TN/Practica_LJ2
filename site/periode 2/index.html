@@ -14,7 +14,7 @@
         <link rel="prev" href="../periode%201/spectrometer/">
       
       
-        <link rel="next" href="semedx/">
+        <link rel="next" href="aeropendulum-openloop/">
       
       
         
@@ -76,6 +76,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#periode-2" class="md-skip">
+          Ga naar inhoud
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -392,6 +397,33 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../Python_tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python-tips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
       
@@ -418,7 +450,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -440,14 +472,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -571,8 +603,6 @@
       
         
       
-        
-      
     
     
     
@@ -586,7 +616,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
           <div class="md-nav__link md-nav__container">
@@ -608,14 +638,14 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_8" id="__nav_8_label" tabindex="">
+              <label class="md-nav__link md-nav__link--active" for="__nav_9" id="__nav_9_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_8">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -634,35 +664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="semedx/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    SEM-EDX
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="open_loop/" class="md-nav__link">
+      <a href="aeropendulum-openloop/" class="md-nav__link">
         
   
   
@@ -690,14 +692,14 @@
   
   
     <li class="md-nav__item">
-      <a href="uvvis/" class="md-nav__link">
+      <a href="aeropendulum-pid/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    UV-VIS
+    Aeropendulum (PID)
   
 
     
@@ -763,6 +765,49 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhoudsopgave
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#week-1-en-2-aeropendulum-open-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Week 1 en 2 — Aeropendulum: open-loop
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-3-en-4-aeropendulum-pid-regeling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Week 3 en 4 — Aeropendulum: PID-regeling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-5-en-6-zonnecel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Week 5 en 6 — Zonnecel
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -779,9 +824,35 @@
 
 
 
-  <h1>Overzicht</h1>
-
-
+<h1 id="periode-2">Periode 2</h1>
+<p>In periode 2 staan <strong>modelleren, meten, regelen en energieomzetting</strong> centraal. In de eerste vier weken werk je met de <strong>aeropendulum</strong>. Je onderzoekt eerst het gedrag van het systeem zonder terugkoppeling en gaat daarna aan de slag met een <strong>PID-regelaar</strong> om de hoek van de pendulum actief te regelen.</p>
+<p>In week 5 en 6 staat het <strong>zonnecelpracticum</strong> centraal. Hier onderzoek je experimenteel de eigenschappen van een zonnecel en analyseer je de verkregen meetgegevens met Python.</p>
+<hr />
+<h2 id="week-1-en-2-aeropendulum-open-loop">Week 1 en 2 — Aeropendulum: open-loop</h2>
+<p>In de eerste twee weken maak je kennis met de <strong>aeropendulum</strong>: een pendulum waarvan de hoek wordt beïnvloed door de stuwkracht van een elektromotor met propeller.</p>
+<p>Je onderzoekt het systeem eerst <strong>open-loop</strong>. Dit betekent dat de motor wordt aangestuurd zonder dat de gemeten hoek automatisch wordt teruggekoppeld naar de aansturing.</p>
+<p>Je brengt experimenteel het gedrag van het systeem in kaart en vergelijkt de metingen met een theoretisch model. Daarbij werk je onder andere met de motoraansturing, de hoeksensor en het uitlezen en verwerken van meetgegevens.</p>
+<p>De resultaten uit deze weken vormen de basis voor het regelen van de aeropendulum in week 3 en 4.</p>
+<p><a href="aeropendulum-openloop/">Naar Aeropendulum – open-loop →</a></p>
+<hr />
+<h2 id="week-3-en-4-aeropendulum-pid-regeling">Week 3 en 4 — Aeropendulum: PID-regeling</h2>
+<p>In week 3 en 4 wordt de gemeten hoek van de aeropendulum gebruikt om de motor automatisch aan te sturen. Het systeem wordt daarmee <strong>closed-loop</strong> geregeld.</p>
+<p>Hiervoor maak je gebruik van een <strong>PID-regelaar</strong>. De regelaar vergelijkt continu de gewenste hoek met de gemeten hoek en past op basis van het verschil de motoraansturing aan.</p>
+<p>Je onderzoekt de invloed van de verschillende onderdelen van de PID-regelaar en stelt de regelparameters zo in dat de aeropendulum de gewenste hoek zo goed mogelijk volgt.</p>
+<p>Hierbij komen theorie, programmeren en experimenteren samen: je gebruikt de hoeksensor als terugkoppeling, implementeert de regelaar en analyseert het dynamische gedrag van het systeem.</p>
+<p><a href="aeropendulum-pid/">Naar Aeropendulum – PID-regeling →</a></p>
+<hr />
+<h2 id="week-5-en-6-zonnecel">Week 5 en 6 — Zonnecel</h2>
+<p>In week 5 en 6 onderzoek je de eigenschappen van een <strong>zonnecel</strong>. Een zonnecel zet invallende stralingsenergie om in elektrische energie.</p>
+<p>Tijdens het practicum voer je metingen uit aan de zonnecel en onderzoek je hoe spanning, stroom en geleverd vermogen van elkaar afhangen.</p>
+<p>De meetgegevens worden verwerkt en geanalyseerd met Python. Op basis daarvan bepaal je karakteristieke eigenschappen van de zonnecel en onderzoek je onder welke omstandigheden het elektrisch vermogen maximaal is.</p>
+<p><a href="zonnecel/">Naar het practicum Zonnecel →</a></p>
+<hr />
+<div class="admonition voorbereiding">
+<p class="admonition-title">Voorbereiding</p>
+</div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Bekijk vóór iedere practicumweek de bijbehorende pagina. Hier staat aangegeven welke voorbereiding je vóór aanvang van het practicum moet uitvoeren.
+</code></pre></div>
 
 
 
