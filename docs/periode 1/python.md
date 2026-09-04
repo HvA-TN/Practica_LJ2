@@ -110,6 +110,12 @@ In dit practicum ga je daarom stap voor stap een complete Python-werkomgeving op
 
     1. Rond de installatie af en open daarna vanuit het startmenu de **Miniforge Prompt**.
 
+<figure markdown="span">
+  ![Installatie van Visual Studio Code](../assets/periode%201//Miniforge.png){ width="100%" }
+  <figcaption>Installatie van Miniforge.</figcaption>
+</figure>
+
+
 !!! opdracht "Opdracht 4 --- Miniforge controleren"
 
     We controleren of Miniforge en het programma `conda` correct zijn geïnstalleerd.
@@ -259,6 +265,10 @@ In dit practicum ga je daarom stap voor stap een complete Python-werkomgeving op
 
     1. Zoek naar de extensies **Python, Jupyter, Prettier, Rainbow CSV, Spreadsheet Viewer** en installeer deze.
 
+<figure markdown="span">
+  ![Installatie van Visual Studio Code](../assets/periode%201//VSCode.png){ width="100%" }
+  <figcaption>Installatie van Miniforge.</figcaption>
+</figure>
 ## Mappenstructuur
 
 Tijdens practica verzamel je verschillende bestanden, zoals Python-scripts, meetdata en figuren. Het is daarom belangrijk om vanaf het begin een duidelijke **mappenstructuur** te gebruiken. Zo blijven bestanden makkelijk terug te vinden en voorkom je dat verschillende projecten of versies door elkaar raken.

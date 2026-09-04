@@ -148,7 +148,7 @@ In de eerste week richt je de programmeeromgeving in die je tijdens de practica 
 
 Aan het einde van deze week heb je een werkende Python-omgeving die je tijdens de rest van het studiejaar kunt gebruiken.
 
-[Naar Python →](../periode%202/python.md)
+[Naar Python →](python.md)
 
 ---
 
@@ -183,7 +183,7 @@ Hierbij combineer je de experimentele opstelling met data-analyse in Python.
 
 ---
 
-## Week 8 en 9 — Constante van Planck
+<!-- ## Week 8 en 9 — Constante van Planck
 
 In dit practicum staat de **constante van Planck** centraal. Groep 1 voert het practicum uit in week 8 en groep 2 in week 9.
 
@@ -193,4 +193,4 @@ In dit practicum staat de **constante van Planck** centraal. Groep 1 voert het p
 
 !!! voorbereiding "Voorbereiding"
 
-    Bekijk vóór iedere practicumweek de bijbehorende pagina. Hier staat aangegeven welke voorbereiding je vóór aanvang van het practicum moet uitvoeren.
+    Bekijk vóór iedere practicumweek de bijbehorende pagina. Hier staat aangegeven welke voorbereiding je vóór aanvang van het practicum moet uitvoeren. -->
