@@ -667,28 +667,6 @@ Een goede figuur bevat in ieder geval:
 !!! tips "Titels, legenda's en onderschriften"
     Vaak worden er onnodig extra elementen toegevoegd aan een figuur, denk aan Titels & legenda's. Heel erg is dit niet, maar het is niet netjes. Het is de bedoeling dat alle informatie van het figuur in het onderschrift staat. Dit is de natuurkundige consensus, echter, andere disciplines wijken hier soms van af.
 
-### Figuur opslaan
-
-Een figuur kan direct vanuit Python worden opgeslagen.
-
-```python
-fig.savefig("figuur.pdf", bbox_inches="tight")
-```
-
-Voor een rasterafbeelding kan bijvoorbeeld PNG worden gebruikt:
-
-```python
-fig.savefig(
-    "figuur.pdf",
-    dpi=300,
-    bbox_inches="tight"
-)
-```
-
-Voor grafieken heeft een vectorformaat zoals **PDF** vaak de voorkeur, omdat lijnen en tekst scherp blijven wanneer de figuur wordt vergroot.
-
----
-
 ## Een model fitten
 
 Wanneer uit de theorie een wiskundig model volgt voor het verband tussen twee grootheden, kunnen we de onbekende parameters van dat model bepalen door het model aan de meetdata te **fitten**.
