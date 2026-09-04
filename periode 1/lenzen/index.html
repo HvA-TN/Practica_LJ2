@@ -395,6 +395,33 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python_tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python-tips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -425,7 +452,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
           <div class="md-nav__link md-nav__container">
@@ -447,14 +474,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -667,8 +694,6 @@
       
         
       
-        
-      
     
     
     
@@ -682,7 +707,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -704,14 +729,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="">
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -730,35 +755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../periode%202/semedx/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    SEM-EDX
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../periode%202/open_loop/" class="md-nav__link">
+      <a href="../../periode%202/aeropendulum-openloop/" class="md-nav__link">
         
   
   
@@ -786,14 +783,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../periode%202/uvvis/" class="md-nav__link">
+      <a href="../../periode%202/aeropendulum-pid/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    UV-VIS
+    Aeropendulum (PID)
   
 
     
@@ -959,7 +956,7 @@
 <p class="admonition-title">Voorbereidingsopdracht 1</p>
 <ol>
 <li>Neem een laptop mee.</li>
-<li>Zorg voor een goede installatie van Python en Jupyter notebooks.[^anaconda]</li>
+<li>Zorg voor een goede installatie van Python en Jupyter notebooks.</li>
 </ol>
 </div>
 <div class="admonition opdracht">
@@ -1037,7 +1034,7 @@
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="k">return</span> <span class="p">(</span><span class="o">...</span><span class="p">)</span>
 </code></pre></div>
 <p>Zoals je misschien hebt opgemerkt, ziet de grafiek er nu aanzienlijk beter uit. De vraag blijft echter wat het snijpunt met de y-as betekent en welke waarde hier precies bij hoort. Om dit op een natuurkundig correcte manier uit te werken, gebruiken natuurkundigen vaak modellen. In dit geval is dat natuurlijk de functie <code>lineair</code>.</p>
-<p>Nu moeten we ons model nog toetsen (<em>fitten</em>!) aan de gemeten data. Dit is in principe een optimalisatieprobleem: we moeten de fitwaarde <em>f</em> zo kiezen dat de afwijkingen tussen model en meting zo klein mogelijk zijn.<sup id="fnref:fitten"><a class="footnote-ref" href="#fn:fitten">3</a></sup> Hiervoor maken we gebruik van de rekenkracht van Python, met de wetenschappelijke module <strong>scipy</strong>.</p>
+<p>Nu moeten we ons model nog toetsen (<em>fitten</em>!) aan de gemeten data. Dit is in principe een optimalisatieprobleem: we moeten de fitwaarde <em>f</em> zo kiezen dat de afwijkingen tussen model en meting zo klein mogelijk zijn.<sup id="fnref:fitten"><a class="footnote-ref" href="#fn:fitten">3</a></sup> Hiervoor maken we gebruik van de rekenkracht van Python, met de wetenschappelijke module scipy.</p>
 <div class="highlight"><span class="filename">Data fitten</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.optimize</span><span class="w"> </span><span class="kn">import</span> <span class="n">curve_fit</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
 <a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1"># Schatting van parameters</span>
@@ -1069,18 +1066,18 @@
 <h3 id="least-squares-principe">Least squares-principe</h3>
 <p>Het idee van een least squares-fit is dat je de afwijkingen tussen model en meting (de residuen) minimaliseert:</p>
 <div class="arithmatex">\[
-r_i = y_i^{(\text{gemeten})} - y(x_i;\theta).
+\epsilon_i = y_i^{(\text{gemeten})} - y(x_i;\theta).
 \]</div>
 <h3 id="zonder-meetfouten">Zonder meetfouten</h3>
 <p>Als de individuele meetonzekerheden <span class="arithmatex">\(\sigma_i\)</span> niet bekend zijn, minimaliseer je de som van de kwadraten van de residuen:</p>
 <div class="arithmatex">\[
-R^2(\theta) = \sum_i r_i^2.
+R^2(\theta) = \sum_i \epsilon_i^2.
 \]</div>
 <p>Dit heet een ordinary least squares-fit (OLS): alle meetpunten wegen even zwaar mee.</p>
 <h3 id="met-meetfouten">Met meetfouten</h3>
 <p>Als de onzekerheden <span class="arithmatex">\(\sigma_i\)</span> wel bekend zijn, deel je de residuen door de fout en minimaliseer je</p>
 <div class="arithmatex">\[
-\chi^2(\theta) = \sum_i \left( \frac{r_i}{\sigma_i} \right)^2.
+\chi^2(\theta) = \sum_i \left( \frac{\epsilon_i}{\sigma_i} \right)^2.
 \]</div>
 <p>Dit heet een weighted least squares-fit (WLS) of <span class="arithmatex">\(\chi^2\)</span>-fit. Het resultaat is statistisch optimaal bij normaal verdeelde meetfouten.</p>
 <h3 id="uitkomst">Uitkomst</h3>
@@ -1106,6 +1103,7 @@ R^2(\theta) = \sum_i r_i^2.
 <li>de initiële schatting <span class="arithmatex">\(p_0\)</span> voor de parameters: bij een niet-lineaire fit kan een slechte start leiden tot lokale minima.</li>
 </ul>
 <p>In vergelijking met een linearisatie heeft een directe least squares-fit als voordeel dat alle beschikbare informatie wordt gebruikt en dat er geen systematische fouten ontstaan door transformaties. Daarom is <code>curve_fit</code> de meest robuuste methode, zeker bij fysische modellen die niet-lineair zijn in de parameters.</p>
+<h3 id="voorbeeld-figuur-fit">Voorbeeld figuur \&amp; fit:</h3>
 <div class="highlight"><span class="filename">Voorbeeld: fitten met curve_fit</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.optimize</span><span class="w"> </span><span class="kn">import</span> <span class="n">curve_fit</span>
 <a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
